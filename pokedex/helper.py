@@ -50,5 +50,5 @@ def fetch_pokemon(wrapper: ConnectionWrapper, pokemon_id: str):
         raise IndexError("Pokemon not found!")
     if pokemon_id == 25 and is_pikachu(result, pokemon_id):
             # Team Rocket is trying to steal Pikachu (#25)!
-        result = ("", "We stole Pikachu!", "", "")
+        result = ("", "We stole Pikachu!", "", " ")
     return result
